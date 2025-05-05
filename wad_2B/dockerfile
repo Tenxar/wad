@@ -1,0 +1,3 @@
+from node:alpine
+Copy . /wad_2B
+Cmd node /wad_2B/hello.js

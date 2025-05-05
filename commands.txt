@@ -1,0 +1,27 @@
+//npm install -g @angular/cli
+//ng new assignment-name
+//cd assignment-name
+//ng serve
+//ng generate component component-name
+//ng g c component-name
+//ng g s service-name
+//ng generate module module-name
+//ng test
+//ng update
+//commands for ass2c
+
+
+//npm init -y
+//npm install express
+//touch server.js
+//mkdir public
+//node server.js
+//ass3a
+
+
+//mkdir node-api
+//cd node-api
+//npm init -y
+//npm install express mongoose body-parser
+//touch server.js
+//ass3b

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eee7e7;
+        }
+
+        /* Sidebar */
+        #sidebar {
+            /* background-color: #2a9d8f; */
+            background-color: #f4f4f4;
+            height: 100vh;
+            padding-top: 20px;
+        }
+
+        #sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #sidebar ul li {
+            padding: 15px;
+            text-align: left;
+        }
+
+        #sidebar ul li a {
+            color: #1d1515;
+            text-decoration: none;
+        }
+
+        #sidebar ul li:hover {
+            background-color: #21867a;
+            
+        }
+
+        /* Dashboard header */
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            border-bottom: 2px solid #dcdcdc;
+            margin-bottom: 20px;
+        }
+
+        .header h2 {
+            margin: 0;
+            color: #264653;
+            display: inline-block;
+        }
+
+        .header .btn {
+            float: right;
+        }
+
+        /* Main content area */
+        .dashboard-stat {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .dashboard-stat h3 {
+            font-size: 1.5rem;
+        }
+
+        .dashboard-stat p {
+            font-size: 1.25rem;
+        }
+
+        .activity-table {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .activity-table table {
+            width: 100%;
+        }
+
+        /* Profile section */
+        .profile-box {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .profile-box ul li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #dcdcdc;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav id="sidebar" class="col-md-2 d-none d-md-block bg-light">
+                <ul class="list-unstyled">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Student</a></li>
+                    <li><a href="#">Teacher</a></li>
+                    <li><a href="#">Assignment</a></li>
+                    <li><a href="#">Examination</a></li>
+                    <li><a href="#">Notes</a></li>
+                    <li><a href="#">Activities</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main content -->
+            <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-md-4">
+                <div class="header clearfix">
+                    <h2>PES Modern College Of Engineering,Pune</h2>
+                    <button class="btn btn-success">Add User</button>
+                </div>
+
+                <!-- Dashboard stats -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="dashboard-stat">
+                            <h3>3200</h3>
+                            <p>Students</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="dashboard-stat">
+                            <h3>21</h3>
+                            <p>Assignments</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="dashboard-stat">
+                            <h3>200</h3>
+                            <p>Teachers</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="dashboard-stat">
+                            <h3>10/03/2025</h3>
+                            <p>Exam Date</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activities table -->
+                <div class="activity-table mt-4">
+                    <h4>Activities</h4>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Activity Name</th>
+                                <th>Class</th>
+                                <th>Total Students</th>
+                                <th>Winner</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Group Discussion</td>
+                                <td>TE</td>
+                                <td>77</td>
+                                <td>Vaishnavi</td>
+                            </tr>
+                            <tr>
+                                <td>Poster Making</td>
+                                <td>SE</td>
+                                <td>62</td>
+                                <td>Sachin</td>
+                            </tr>
+                            <tr>
+                                <td>Hackthon</td>
+                                <td>BE</td>
+                                <td>79</td>
+                                <td>Ankita</td>
+                            </tr>
+                            <tr>
+                                <td>Aptitude</td>
+                                <td>BE</td>
+                                <td>67</td>
+                                <td>Ganesh</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- New Students section -->
+                <div class="profile-box mt-4">
+                    <h4>New Students</h4>
+                    <ul class="list-unstyled">
+                        <li>
+                            <span>Ganesh</span> 
+                            <button class="btn btn-success btn-sm">View</button>
+                        </li>
+                        <li>
+                            <span>Sachin</span> 
+                            <button class="btn btn-success btn-sm">View</button>
+                        </li>
+                        <li>
+                            <span>Vaishnavi</span> 
+                            <button class="btn btn-success btn-sm">View</button>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

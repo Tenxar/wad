@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - eCommerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">ShopEase</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to ShopEase</h1>
+        <p>Your one-stop shop for amazing deals!</p>
+        <button onclick="scrollToProducts()">Shop Now</button>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/OIP.jpg" alt="Product 1">
+                <h3>Smartphone</h3>
+                <p>$10,000</p>
+                <button onclick="addToCart('Smartphone', 499.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/headphone.jpg" alt="Product 2">
+                <h3>Wireless Headphones</h3>
+                <p>$899.00</p>
+                <button onclick="addToCart('Wireless Headphones', 99.99)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/laptop.jpg" alt="Product 3">
+                <h3>Laptop</h3>
+                <p>$39,999.00</p>
+                <button onclick="addToCart('Laptop', 999.99)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ShopEase. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
